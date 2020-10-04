@@ -8,9 +8,9 @@ int main()
   char j = 'Z';
   char str[80];
   char str2[80];
-  for (int i = 0; i < 80; i++){
-    char str[80] = { '\0' };
-    char str2[80] = { '\0' };
+  for (int i = 0; i < 80; i++){//makes str and str2 null
+    char str[i] = { '\0' };
+    char str2[i] = { '\0' };
   }
   int count = 0;
   cin.get(str, 80);
@@ -25,7 +25,7 @@ int main()
 
   cout << str2 << endl << count << endl;
   
-  for (int i = 0; i < count; i++) {
+  for (int i = 0; i < count; i++) {//makes str2 lowercase
     str2[i] = (tolower(str2[i]));
   }  
 
