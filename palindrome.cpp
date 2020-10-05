@@ -37,7 +37,7 @@ int main()
     str3[count - i - 1] = ch;
   }
 
-  if (strcmp(str2, str3) == false) {
+  if (strcmp(str2, str3) == false) {//Compares str2 and str3 to see if input is the same as the reverse
     cout << "Palindrome.";
   }
   else {
