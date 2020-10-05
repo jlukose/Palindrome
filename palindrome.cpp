@@ -31,13 +31,18 @@ int main()
 
   strcpy(str3, str2);//copy str2 to str3
 
-  for (int i = 0; i < count - 1; i++){//reverse str3 NOT WORKING
+  for (int i = 0; i < count/2; i++){//reverse str3
     ch = str3[i];
     str3[i] = str3[count - i - 1];
     str3[count - i - 1] = ch;
   }
 
-  cout << str3;
+  if (strcmp(str2, str3) == false) {
+    cout << "Palindrome.";
+  }
+  else {
+    cout << "Not a palindrome.";
+  }
   
   return 0;
 }
