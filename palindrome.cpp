@@ -32,9 +32,9 @@ int main()
   strcpy(str3, str2);//copy str2 to str3
 
   for (int i = 0; i < count - 1; i++){//reverse str3 NOT WORKING
-    ch = str[i];
-    str[i] = str[count - i - 1];
-    str[count - i - 1] = ch;
+    ch = str3[i];
+    str3[i] = str3[count - i - 1];
+    str3[count - i - 1] = ch;
   }
 
   cout << str3;
